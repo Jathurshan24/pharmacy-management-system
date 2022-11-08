@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57444B44-BFED-4CB4-B64D-69F8AB55BF7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pharmacy_Management_System</RootNamespace>
+    <AssemblyName>Pharmacy_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Supplier.Designer.cs">
+      <DependentUpon>Add_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Medicine.Designer.cs">
+      <DependentUpon>Add_Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Staff_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Staff_Details.Designer.cs">
+      <DependentUpon>Add_Staff_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Medicine_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Medicine_Details.Designer.cs">
+      <DependentUpon>Delete_Medicine_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Staff_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Staff_Details.Designer.cs">
+      <DependentUpon>Delete_Staff_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Supplier_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Supplier_Details.Designer.cs">
+      <DependentUpon>Delete_Supplier_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Admin.Designer.cs">
+      <DependentUpon>Login_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_User.Designer.cs">
+      <DependentUpon>Login_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicineDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MedicineDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modify_Medicine_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify_Medicine_Details.Designer.cs">
+      <DependentUpon>Modify_Medicine_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify_Staff_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify_Staff_details.Designer.cs">
+      <DependentUpon>Modify_Staff_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify_Supplier_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify_Supplier_Details.Designer.cs">
+      <DependentUpon>Modify_Supplier_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passwordEncrypter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegExp.cs" />
+    <Compile Include="Retail.cs" />
+    <Compile Include="Retail_Sales_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retail_Sales_Details.Designer.cs">
+      <DependentUpon>Retail_Sales_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Retail_Sales_Details2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retail_Sales_Details2.Designer.cs">
+      <DependentUpon>Retail_Sales_Details2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffDetailsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StaffDetailsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="staffDetailsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>staffDetailsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="supplierDetailsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supplierDetailsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="supplierDetailsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supplierDetailsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="View Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Purchase.Designer.cs">
+      <DependentUpon>View Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Expiry_Date.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Expiry_Date.Designer.cs">
+      <DependentUpon>View_Expiry_Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Purchase2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Purchase2.Designer.cs">
+      <DependentUpon>View_Purchase2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Sales.Designer.cs">
+      <DependentUpon>View_Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Sales2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Sales2.Designer.cs">
+      <DependentUpon>View_Sales2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Staff_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Staff_Details.Designer.cs">
+      <DependentUpon>View_Staff_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Stock.Designer.cs">
+      <DependentUpon>View_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Stock2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Stock2.Designer.cs">
+      <DependentUpon>View_Stock2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Supplier_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Supplier_Details.Designer.cs">
+      <DependentUpon>View_Supplier_Details.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Supplier.resx">
+      <DependentUpon>Add_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Medicine.resx">
+      <DependentUpon>Add_Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Staff_Details.resx">
+      <DependentUpon>Add_Staff_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Medicine_Details.resx">
+      <DependentUpon>Delete_Medicine_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Staff_Details.resx">
+      <DependentUpon>Delete_Staff_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Supplier_Details.resx">
+      <DependentUpon>Delete_Supplier_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Admin.resx">
+      <DependentUpon>Login_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_User.resx">
+      <DependentUpon>Login_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify_Medicine_Details.resx">
+      <DependentUpon>Modify_Medicine_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify_Staff_details.resx">
+      <DependentUpon>Modify_Staff_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify_Supplier_Details.resx">
+      <DependentUpon>Modify_Supplier_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Retail_Sales_Details.resx">
+      <DependentUpon>Retail_Sales_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Retail_Sales_Details2.resx">
+      <DependentUpon>Retail_Sales_Details2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Purchase.resx">
+      <DependentUpon>View Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Expiry_Date.resx">
+      <DependentUpon>View_Expiry_Date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Purchase2.resx">
+      <DependentUpon>View_Purchase2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Sales.resx">
+      <DependentUpon>View_Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Sales2.resx">
+      <DependentUpon>View_Sales2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Staff_Details.resx">
+      <DependentUpon>View_Staff_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Stock.resx">
+      <DependentUpon>View_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Stock2.resx">
+      <DependentUpon>View_Stock2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Supplier_Details.resx">
+      <DependentUpon>View_Supplier_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="MedicineDataSet.xsc">
+      <DependentUpon>MedicineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MedicineDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MedicineDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MedicineDataSet.xss">
+      <DependentUpon>MedicineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StaffDetailsDataSet.xsc">
+      <DependentUpon>StaffDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StaffDetailsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StaffDetailsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StaffDetailsDataSet.xss">
+      <DependentUpon>StaffDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="staffDetailsDataSet1.xsc">
+      <DependentUpon>staffDetailsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="staffDetailsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>staffDetailsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="staffDetailsDataSet1.xss">
+      <DependentUpon>staffDetailsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="supplierDetailsDataSet.xsc">
+      <DependentUpon>supplierDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="supplierDetailsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supplierDetailsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supplierDetailsDataSet.xss">
+      <DependentUpon>supplierDetailsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="supplierDetailsDataSet1.xsc">
+      <DependentUpon>supplierDetailsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="supplierDetailsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supplierDetailsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supplierDetailsDataSet1.xss">
+      <DependentUpon>supplierDetailsDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ROUND BUTTON logo_full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_small_settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001510-black-inlay-crystal-clear-bubble-icon-media-a-media31-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256-256-5522ef02c3bcb2c8389eda0bbc2f4815.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editor-trash-delete-recycle-bin-outline-stroke-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Medicine.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Medicine_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Medicine.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\logout-button-png-hi.png" />
+    <None Include="Resources\atlanta.png" />
+    <None Include="Resources\shopping-cart-512.png" />
+    <None Include="Resources\pharmacy_icon.jpg" />
+    <None Include="Resources\medicine-box-2-icon %281%29.png" />
+    <None Include="Resources\Actions-view-sort-descending-icon.png" />
+    <None Include="Resources\edit-file-icon.png" />
+    <None Include="Resources\calendar-icon.png" />
+    <None Include="Resources\File-Delete-icon.png" />
+    <None Include="Resources\Actions-contact-new-icon.png" />
+    <None Include="Resources\Actions-view-calendar-list-icon.png" />
+    <None Include="Resources\profile-delete-icon.png" />
+    <None Include="Resources\profile-delete-icon %281%29.png" />
+    <None Include="Resources\Modify-icon.png" />
+    <None Include="Resources\add-contact-icon.png" />
+    <None Include="Resources\Dj-View-icon.png" />
+    <None Include="Resources\delete-contact-folded-icon.png" />
+    <None Include="Resources\Delete-group-icon.png" />
+    <None Include="Resources\Actions-document-edit-icon.png" />
+    <None Include="Resources\Sale-icon.png" />
+    <None Include="Resources\corbeille-box-sale-icon.png" />
+    <None Include="Resources\box-2-icon.png" />
+    <None Include="Resources\Finance-Purchase-Order-icon.png" />
+    <None Include="Resources\Product-sale-report-icon.png" />
+    <Content Include="staffDetails.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="staffDetails_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>staffDetails.mdf</DependentUpon>
+    </Content>
+    <Content Include="supplierDetails.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="supplierDetails_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>supplierDetails.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
