@@ -1,0 +1,74 @@
+string myPassword = "password";
+string mySalt = BCrypt.GenerateSalt();
+//mySalt == "$2a$10$rBV2JDeWW3.vKyeQcM8fFO"
+string myHash = BCrypt.HashPassword(myPassword, mySalt);
+//myHash == "$2a$10$rBV2JDeWW3.vKyeQcM8fFO4777l4bVeQgDL6VIkxqlzQ7TCalQvla"
+bool doesPasswordMatch = BCrypt.CheckPassword(myPassword, myHash);
+
+
+
+
+
+private void SetPassword(string user, string userPassword)
+{
+   string pwdToHash = userPassword + "^Y8~JJ"; // ^Y8~JJ is my hard-coded salt
+   string hashToStoreInDatabase = BCrypt.HashPassword(pwdToHash, BCrypt.GenerateSalt());
+   using (SqlConnection sqlConn = new System.Data.SqlClient.SqlConnection(...)
+   {
+     sqlConn.Open();
+     SqlCommand cmSql = sqlConn.CreateCommand();
+     cmSql.CommandText = "UPDATE LOGINS SET PASSWORD=@parm1 WHERE USERNAME=@parm2";
+     cmSql.Parameters.Add("@parm1", SqlDbType.Char);
+     cmSql.Parameters.Add("@parm2", SqlDbType.VarChar);
+     cmSql.Parameters["@parm1"].Value = hashToStoreInDatabase;
+     cmSql.Parameters["@parm2"].Value = user;
+     cmSql.ExecuteNonQuery();
+   }
+ }
+
+private bool DoesPasswordMatch(string hashedPwdFromDatabase, string userEnteredPassword)
+{
+    return BCrypt.CheckPassword(userEnteredPassword + "^Y8~JJ", hashedPwdFromDatabase);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+con.Open();
+          
+                com = new SqlCommand("select max(convert(int,billNo)) from retails",con);
+
+                SqlDataReader dr2;
+                dr2 = com.ExecuteReader();
+                String x1 = "";
+                while (dr2.Read())
+                {
+                    x1 = dr2[0].ToString();
+
+                }
+                dr2.Close();
+
+                double anDouble;
+                anDouble = Convert.ToInt32(x1);
+                anDouble = Double.Parse(x1);
+
+                anDouble = anDouble + 1;
+                textBox1.Text = anDouble.ToString();
+             con.Close();
